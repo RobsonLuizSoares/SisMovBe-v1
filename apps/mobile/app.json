@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "SismovBE",
+    "slug": "sismovbe-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "sismovbe",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sismovbe.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sismovbe.mobile"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-image-picker", {"photosPermission": "O app precisa acessar a câmera para fotos de itens manuais."}],
+      ["expo-camera", {"cameraPermission": "O app precisa acessar a câmera para escanear códigos de barras."}]
+    ]
+  }
+}
